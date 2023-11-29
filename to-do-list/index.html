@@ -8,25 +8,24 @@
     <title>Vite + TS</title>
     <script type="module" src="/src/main.ts"></script>
   </head>
-  <body class="bg-zinc-900">
-    <main class="text-white">
-      <h1 class="text-center">My List</h1>
+  <body class="bg-zinc-900 flex justify-center">
+    <main class="text-white flex-1 my-12 mx-20 max-w-[800px]">
+      <h1 class="text-center mb-8 text-3xl">My List</h1>
 
-      <section class="newItemEntry">
-        <h2 class="offscreen">New Item Entry</h2>
-        <form class="newItemEntry__form" id="itemEntryForm">
-          <label for="newItem" class="offscreen">Enter a new to do item</label>
+      <section class="flex justify-center shadow-md mb-4 bg-zinc-800 p-4 rounded-lg">
+        <!-- <h2 class="offscreen">New Item Entry</h2> -->
+        <form class="flex gap-4 justify-between flex-1" id="itemEntryForm">
+          <!-- <label for="newItem" class="offscreen">Enter a new to do item</label> -->
           <input
-            class="newItemEntry__input"
+            class="w-full bg-transparent p-2 text-zinc-500"
             id="newItem"
             type="text"
-            maxlength="40"
             autocomplete="off"
             placeholder="Add item"
           />
           <button
             id="addItem"
-            class="button newItemEntry__button"
+            class="bg-zinc-700 hover:bg-zinc-600 px-4 rounded-md"
             title="Add new item"
             aria-label="Add new item to list"
           >
@@ -35,12 +34,12 @@
         </form>
       </section>
 
-      <section class="listContainer">
-        <header class="listTitle">
-          <h2 id="listName">List</h2>
+      <section class="shadow-md  bg-zinc-800 p-4 rounded-lg">
+        <header class="flex justify-between py-2 mb-2">
+          <h2 class="text-xl font-semibold place-content-center grid" id="listName">List</h2>
           <button
             id="clearItemsButton"
-            class="button listTitle__button"
+            class="py-2 px-4 bg-zinc-700 rounded-md hover:bg-zinc-600 "
             title="Clear the list"
             aria-label="Remove all items from the list"
           >
