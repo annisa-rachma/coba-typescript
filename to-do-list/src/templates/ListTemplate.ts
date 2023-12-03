@@ -26,7 +26,7 @@ export default class ListTemplate implements DOMList {
 
         fullList.list.forEach(item => {
             const li = document.createElement('li') as HTMLLIElement
-            li.className = "item"
+            li.className = "item "
 
             const check = document.createElement('input') as HTMLInputElement
             check.type = 'checkbox'
